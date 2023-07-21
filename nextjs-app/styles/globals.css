@@ -1,0 +1,32 @@
+/* Reset some basic elements */
+html, body, #__next {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Global styles for the app */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: #f5f5f5;
+  padding: 15px 0;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.email-form {
+  margin-top: 30px;
+}

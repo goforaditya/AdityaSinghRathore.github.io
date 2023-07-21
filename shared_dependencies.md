@@ -1,15 +1,29 @@
 Shared Dependencies:
 
-1. CSS Styles: The "styles.css" file will be shared across all HTML files for consistent styling. 
+1. Next.js: This is the main framework used for building the application. It is used in all the files for server-side rendering and routing.
 
-2. JavaScript Functions: The "main.js" file will contain shared functions such as "loadContent()", "navigateToPage()", "displayProjectDetails()", which will be used across different HTML files.
+2. TypeScript: This is used for type checking and improved developer experience. It is used in all the .tsx files.
 
-3. DOM Elements: Common DOM elements across the HTML files will include "header", "footer", "nav", "main-content", "project-details", "contact-form".
+3. React: This is implicitly used in all the .tsx files as Next.js is built on top of React.
 
-4. Images: The "profile.jpg" will be used in multiple pages like "index.html" and "about.html". The project images "project1.jpg", "project2.jpg", "project3.jpg" will be used in "projects.html" and "par_technology.html".
+4. Mailchimp: This is used in the "mailchimp.ts" files for receiving emails.
 
-5. Data: The user's professional details and project information will be shared across "about.html", "projects.html", and "par_technology.html".
+5. CSS Modules: These are used in all the .css files for styling the components.
 
-6. Message Names: Common message names for user interaction could include "formSubmissionSuccess", "formSubmissionFailure", "navigationSuccess", "navigationFailure".
+6. Shared Components: The "Header.tsx" and "Footer.tsx" components are likely used in multiple pages of the application.
 
-7. Exported Variables: Variables like "current_page", "projects_data", "contact_form_data" could be exported from "main.js" for use in different HTML files.
+7. Shared Styles: The "globals.css" file is likely imported in multiple files to apply global styles.
+
+8. Shared Utilities: The "utils/mailchimp.ts" file is likely imported in the "api/mailchimp.ts" file and possibly others to handle Mailchimp related functionality.
+
+9. Shared DOM Elements: The id names of DOM elements used in the JavaScript functions are shared across the .tsx files.
+
+10. Shared Functions: Functions defined in one file may be imported and used in another file. For example, functions defined in "utils/mailchimp.ts" may be used in "api/mailchimp.ts".
+
+11. Shared Data Schemas: If there are any data schemas defined, they would be shared across the .tsx and .ts files.
+
+12. Shared Message Names: If the application uses any messaging system (like events or pub/sub), the message names would be shared across the .tsx and .ts files.
+
+13. Package.json: This file contains the list of dependencies and scripts that are shared across the entire application.
+
+14. tsconfig.json: This file contains the TypeScript configuration that is shared across all TypeScript files in the application.
